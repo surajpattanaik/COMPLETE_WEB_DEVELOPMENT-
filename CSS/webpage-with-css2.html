@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>WebPage with CSS</title>	
+<!--
+	z-index:section with higher z-index appear on front. --> 
+<style type="text/css">
+	#first-section {
+		color: bold;
+		font-size:125%;
+		background-color: gold;
+		width: 200px;
+		position: fixed;
+		
+
+	
+
+	}
+
+
+	.red {
+		color: red;
+	}
+
+.large{
+	font-size: 200%;
+}
+#green{
+	color: green;
+}
+.blue{
+	color: blue;
+}
+#underlined{
+	text-decoration: underline;
+}
+#second-section{
+	background-color: yellow;
+	width: 200px;
+	position: relative;
+	left: 200px;
+	top: -32px;
+	height: 500px;
+	padding: 300px 10px 10px 10px;
+	text-align: center;
+}
+.margin{
+	background-color: pink;
+	width: 100px;
+	height: 50px;
+	margin: 100px 50px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	text-align:center;
+	padding:50px 10px 10px 10px;
+
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+p{
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+</style>
+</head>
+<body>
+	<div id="first-section">
+		<p>It is  the first section.</p>
+		<p>................................END</p>
+
+	</div>
+	<div id="second-section">
+<p class="red large" style="">Here is some text...</p>
+<p class="large" style="">CSS is cool.</p>
+<p class="blue">This is some more text.<span id="underlined">This is underlined text.</span></p>
+<h1 id="green" style="">CSS is cool........END</h1>
+
+</div>
+<p>This paragraph is not floated</p>
+<div class="margin">
+	It is Fun!
+</div>
+
+</body>
+</html>
